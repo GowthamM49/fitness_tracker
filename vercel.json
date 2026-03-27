@@ -1,4 +1,11 @@
 {
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
+  "env": {
+    "REACT_APP_API_URL": "https://fitness-tracker-34kr.onrender.com/api",
+    "REACT_APP_NAME": "KEC Fitness Tracker",
+    "GENERATE_SOURCEMAP": "false"
+  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
