@@ -1,16 +1,12 @@
 {
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "installCommand": "npm install",
-  "framework": "create-react-app",
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "env": {
-    "REACT_APP_API_URL": "https://your-backend-service.onrender.com/api"
+    "REACT_APP_API_URL": "https://fitness-tracker-34kr.onrender.com/api",
+    "REACT_APP_NAME": "KEC Fitness Tracker",
+    "GENERATE_SOURCEMAP": "false"
   }
 }
